@@ -1,0 +1,72 @@
+<html>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<head>
+  <style>
+    body {
+
+		font-family: Merienda;
+      background-image: url("https://i.pinimg.com/originals/8c/f3/35/8cf33581559754a9c3420f990d99a142.gif");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #myCanvas {
+      margin-top: 30px;
+      border-width: 10px;
+      background-color: white;
+      border-style: ridge;
+    }
+
+    h1,
+    h4 {
+      color: white !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>CAR RACING </title>
+</head>
+
+<body onload="add();">
+
+  <center>
+    <h1>CAR RACING</h1>
+    <canvas id="myCanvas" width="820" height="160">
+    </canvas>
+    <h4>
+      <b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIABLE PRESS ANY ARROW KEY
+    </h4>
+   
+    <p id="winner" ></p>
+   
+    <button style=" background-color: yellow;
+    font-size: 20px;
+    padding: 32px 16px;
+    border-radius: 12px;
+    border: 2px solid #4CAF50; /* Green */" onclick="Car1()">Car 1</button>
+
+	<button style=" background-color: yellow;
+    font-size: 20px;
+    padding: 32px 16px;
+    border-radius: 12px;
+    border: 2px solid #4CAF50; /* Green */"onclick="Car2()">Car 2</button>
+
+    <script>
+      function Car1() {
+        alert("Up arrow key to move the car1 up.Down arrow key to move the car1 down.Left arrow key to move the car1 left.Right arrow key to move the car1 right");
+      }
+
+	  function Car2() {
+        alert("Car2 control w arrow key to move the car1 up s arrow key to move the car1 down a arrow key to move the car1 left d arrow key to move the car1 right");
+      }
+    </script>
+  </center>
+  <script src="main.js">
+  </script>
+</body>
+
+</html>
